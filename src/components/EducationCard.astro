@@ -1,0 +1,10 @@
+---
+const {school, degree, year, description} = Astro.props;
+---
+
+<div>
+  <small class="text-slate-400">{year}</small>
+  <h3 class="text-indigo-400 font-bold text-xl mb-2">{degree}</h3>
+  <h4 class="font-semibold mb-4 text-slate-400">{school}</h4>
+  <p>{description}</p>
+</div>

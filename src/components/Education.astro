@@ -1,0 +1,24 @@
+---
+import EducationCard from "./EducationCard.astro"
+import Section from "./Section.astro"
+
+
+const education = [
+  {
+    school: 'Facultad de Ingeniería - UNJu',
+    degree: 'Analista Programador Universitario',
+    year: '2021 - actualidad',
+    description: `En la carrera he adquirido conocimientos sobre
+    programación orientada a objetos, estructuras de datos,
+    manejo de framworks como Spring Boot, Spring Security y Spring Cloud.`
+  }
+]
+---
+
+<Section title="Educación" imageUrl="/images/sombrero-de-graduacion.png" ref="education">
+  {
+    education.map( ({school, degree, year, description}) => (
+      <EducationCard school={school} degree={degree} year={year} description={description} />
+    ))
+  }
+</Section>
