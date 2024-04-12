@@ -1,0 +1,42 @@
+---
+import Section from "./Section.astro";
+import SocialCard from "./SocialCard.astro";
+
+const socials = [
+  {
+    label: 'Github',
+    imageUrl: '/images/github.png',
+    link: 'www.github.com'
+  },
+  {
+    label: 'Linkedin',
+    imageUrl: '/images/linkedin.png',
+    link: 'www.linkedin.com'
+  },
+  {
+    label: 'Correo',
+    imageUrl: '/images/email.png',
+    link: 'mailto:dariorvidal.27@gmail'
+  },
+  {
+    label: 'Argentina',
+    imageUrl: '/images/pin-de-mapa.png',
+    link: 'www.google.com/maps/place/argentina'
+  }
+
+
+]
+---
+<Section title='Sobre mi' ref="about">
+  <p>
+    Desarrollador <span class="text-red-300">Back-end</span> y estudiante
+    de la <span class="text-indigo-300">Facultad de Ingeniería</span>.
+    Apasionado por la programación y las tecnologías informáticas.
+  </p>
+
+  <div class="flex flex-wrap gap-4 mt-8">
+    {socials.map(social => (
+      <SocialCard {...social} />
+    ))}
+  </div>
+</Section>

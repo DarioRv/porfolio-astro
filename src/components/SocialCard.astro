@@ -1,0 +1,27 @@
+---
+interface Props {
+  label: string;
+  link: string;
+  imageUrl: string;
+}
+
+const { label, link, imageUrl } = Astro.props;
+---
+<a
+  class="flex gap-2 py-2 px-4 w-fit rounded-full hover:bg-slate-700 cursor-pointer"
+  href={link}
+>
+  <img src={imageUrl} alt={label}>
+  <span>{label}</span>
+</a>
+
+<style>
+  a {
+    background-color: #282828;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+</style>
