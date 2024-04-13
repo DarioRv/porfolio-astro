@@ -1,42 +1,58 @@
 ---
-import Section from "./Section.astro";
-import SocialCard from "./SocialCard.astro";
+import Section from './Section.astro';
+import SocialCard from './SocialCard.astro';
 
 const socials = [
   {
     label: 'Github',
     imageUrl: '/images/github.svg',
-    link: 'https://www.github.com/DarioRv'
+    link: 'https://www.github.com/DarioRv',
   },
   {
     label: 'Linkedin',
     imageUrl: '/images/linkedin.svg',
-    link: 'https://www.linkedin.com/in/dariovidal9'
+    link: 'https://www.linkedin.com/in/dariovidal9',
   },
   {
     label: 'Correo',
     imageUrl: '/images/email.png',
-    link: 'mailto:dariorvidal.27@gmail'
+    link: 'mailto:dariorvidal.27@gmail',
   },
   {
     label: 'Argentina',
     imageUrl: '/images/pin-de-mapa.png',
-    link: 'https://www.google.com/maps/place/argentina'
-  }
-
-
-]
+    link: 'https://www.google.com/maps/place/argentina',
+  },
+];
 ---
-<Section title='Sobre mi' ref="about">
-  <p>
-    Desarrollador <span class="text-red-300">Back-end</span> y estudiante
-    de la <span class="text-indigo-300">Facultad de Ingeniería</span>.
-    Apasionado por la programación y las tecnologías informáticas.
+
+<Section title='Hola, soy Darío' ref='about'>
+  <p class='mb-5'>
+    Desarrollador <em class='text-[#ff5151]'>Back-end</em> y <em
+      class='text-[#ff5151]'>Front-end</em
+    >, soy estudiante de la carrera <strong class='text-indigo-300'
+      >Analista Programador Universitario</strong
+    >
+    en la Facultad de Ingeniería.
   </p>
 
-  <div class="flex flex-wrap gap-4 mt-8">
-    {socials.map(social => (
-      <SocialCard {...social} />
-    ))}
+  <p class='mb-5'>
+    Me especializo en el desarrollo back-end con <strong class='text-amber-400'
+      >Java</strong
+    >, <strong class='text-emerald-400'>Spring Boot</strong>, JPA con Hibernate
+    y <strong class='text-blue-400'>MySQL</strong>.
+  </p>
+
+  <p class='mb-5'>
+    Actualmente estoy aprendiendo acerca de tecnologías como <strong
+      class='text-green-400'>Node.js</strong
+    >,
+    <strong class='text-[#ff5151]'>Angular</strong> y <strong
+      class='text-yellow-400'>Express</strong
+    >.
+  </p>
+
+  <div class='flex flex-wrap gap-4 mt-8'>
+    {socials.map(social => <SocialCard {...social} />)}
   </div>
 </Section>
