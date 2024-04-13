@@ -1,0 +1,66 @@
+---
+import Section from "./Section.astro";
+
+const skills = [
+  {
+    label: 'html',
+    imageUrl: '/images/html-5.png',
+  },
+  {
+    label: 'css',
+    imageUrl: '/images/css-3.png',
+  },
+  {
+    label: 'javascript',
+    imageUrl: '/images/js.png',
+  },
+  {
+    label: 'node',
+    imageUrl: '/images/node.png',
+  },
+  {
+    label: 'Angular',
+    imageUrl: '/images/angular.png',
+  },
+  {
+    label: 'Java',
+    imageUrl: '/images/java.png',
+  },
+  {
+    label: 'Spring Boot',
+    imageUrl: '/images/spring-boot.png',
+  },
+  {
+    label: 'Spring Security',
+    imageUrl: '/images/spring-security.png',
+  },
+  {
+    label: 'MySQL',
+    imageUrl: '/images/mysql.svg',
+  },
+  {
+    label: 'MongoDB',
+    imageUrl: '/images/mongodb.png',
+  },
+  {
+    label: 'Git',
+    imageUrl: '/images/git.png',
+  },
+  {
+    label: 'Docker',
+    imageUrl: '/images/docker.png',
+  },
+
+]
+---
+<Section title="Habilidades" imageUrl="/images/administracion.png" ref="skills" >
+  <div class="flex flex-wrap gap-2 lg:gap-4 justify-center">
+    {
+    skills.map(skill => (
+      <div class="bg-[#282828] rounded p-4 flex items-center" title={skill.label}>
+        <img  class="w-16" src={skill.imageUrl} alt={skill.label} />
+      </div>
+    ))
+    }
+  </div>
+</Section>
