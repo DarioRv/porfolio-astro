@@ -4,27 +4,27 @@ import Section from "./Section.astro";
 const skills = [
   {
     label: 'html',
-    imageUrl: '/images/html-5.png',
+    imageUrl: '/images/html5.svg',
   },
   {
     label: 'css',
-    imageUrl: '/images/css-3.png',
+    imageUrl: '/images/css.svg',
   },
   {
     label: 'javascript',
-    imageUrl: '/images/js.png',
+    imageUrl: '/images/javascript.svg',
   },
   {
     label: 'node',
-    imageUrl: '/images/node.png',
+    imageUrl: '/images/nodejs.svg',
   },
   {
     label: 'Angular',
-    imageUrl: '/images/angular.png',
+    imageUrl: '/images/angular.svg',
   },
   {
     label: 'Java',
-    imageUrl: '/images/java.png',
+    imageUrl: '/images/java.svg',
   },
   {
     label: 'Spring Boot',
@@ -40,15 +40,15 @@ const skills = [
   },
   {
     label: 'MongoDB',
-    imageUrl: '/images/mongodb.png',
+    imageUrl: '/images/mongodb.svg',
   },
   {
     label: 'Git',
-    imageUrl: '/images/git.png',
+    imageUrl: '/images/git.svg',
   },
   {
     label: 'Docker',
-    imageUrl: '/images/docker.png',
+    imageUrl: '/images/docker.svg',
   },
 
 ]
@@ -58,7 +58,7 @@ const skills = [
     {
     skills.map(skill => (
       <div class="bg-[#282828] rounded p-4 flex items-center" title={skill.label}>
-        <img  class="w-16" src={skill.imageUrl} alt={skill.label} />
+        <img  class="h-16" src={skill.imageUrl} alt={skill.label} />
       </div>
     ))
     }
