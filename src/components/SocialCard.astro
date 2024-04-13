@@ -9,7 +9,7 @@ const { label, link, imageUrl } = Astro.props;
 ---
 <a
   class="flex gap-2 py-2 px-4 w-fit rounded-full hover:bg-slate-700 cursor-pointer"
-  href={link}
+  href={link} target="_blank"
 >
   <img src={imageUrl} alt={label}>
   <span>{label}</span>
