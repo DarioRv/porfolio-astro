@@ -1,0 +1,33 @@
+---
+import type { Project } from "src/interfaces/project.interface";
+import Badge from "./Badge.astro";
+import SocialCard from "./SocialCard.astro";
+
+const { title, description, demoUrl, imageUrl, repositoryUrl, tags }: Project = Astro.props as Project;
+---
+<div class="flex gap-8">
+  <div>
+    <img class="aspect-video rounded-xl" src={imageUrl} alt={title}>
+  </div>
+  <div>
+    <h3 class="text-yellow-400 text-xl font-bold mb-3">{title}</h3>
+    {
+      tags
+      &&
+      <div class="flex gap-1 flex-wrap mb-3">
+      {
+        tags.map((tag) => (
+          <Badge label={tag.label} imageUrl={tag.imageUrl} />
+        ))
+      }
+    </div>
+    }
+    <p>{description}</p>
+
+    <div class="flex justify-between mt-6">
+      { repositoryUrl && <SocialCard label="Código" imageUrl="/images/github.svg" link={repositoryUrl} /> }
+      { demoUrl && <SocialCard label="Demo" imageUrl="/images/transmision-en-vivo.png" link={demoUrl} /> }
+    </div>
+
+  </div>
+</div>
