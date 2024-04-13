@@ -1,21 +1,21 @@
 ---
-import type { Project } from 'src/interfaces/project.interface';
-import Badge from './Badge.astro';
-import SocialCard from './SocialCard.astro';
+import type { Project } from "src/interfaces/project.interface";
+import Badge from "./Badge.astro";
+import SocialCard from "./SocialCard.astro";
 
 const { title, description, demoUrl, imageUrl, repositoryUrl, tags }: Project =
   Astro.props as Project;
 ---
 
-<div class='flex flex-col lg:flex-row gap-8'>
+<div class="flex flex-col lg:flex-row gap-8">
   <div>
-    <img class='aspect-video rounded-xl' src={imageUrl} alt={title} />
+    <img class="aspect-video rounded-xl" src={imageUrl} alt={title} />
   </div>
   <div>
-    <h3 class='text-yellow-400 text-xl font-bold mb-3'>{title}</h3>
+    <h3 class="text-yellow-400 text-xl font-bold mb-3">{title}</h3>
     {
       tags && (
-        <div class='flex gap-1 flex-wrap mb-3'>
+        <div class="flex gap-1 flex-wrap mb-3">
           {tags.map(tag => (
             <Badge label={tag.label} imageUrl={tag.imageUrl} />
           ))}
@@ -24,12 +24,12 @@ const { title, description, demoUrl, imageUrl, repositoryUrl, tags }: Project =
     }
     <p>{description}</p>
 
-    <div class='flex gap-3 mt-6'>
+    <div class="flex gap-3 mt-6">
       {
         repositoryUrl && (
           <SocialCard
-            label='Código'
-            imageUrl='/images/github.svg'
+            label="Código"
+            imageUrl="/images/github.svg"
             link={repositoryUrl}
           />
         )
@@ -37,8 +37,8 @@ const { title, description, demoUrl, imageUrl, repositoryUrl, tags }: Project =
       {
         demoUrl && (
           <SocialCard
-            label='Demo'
-            imageUrl='/images/transmision-en-vivo.png'
+            label="Demo"
+            imageUrl="/images/transmision-en-vivo.png"
             link={demoUrl}
           />
         )

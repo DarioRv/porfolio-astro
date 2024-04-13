@@ -1,25 +1,25 @@
 ---
-import type { Project } from 'src/interfaces/project.interface';
-import ProjectItem from './ProjectItem.astro';
-import Section from './Section.astro';
+import type { Project } from "src/interfaces/project.interface";
+import ProjectItem from "./ProjectItem.astro";
+import Section from "./Section.astro";
 
 const projects: Project[] = [
   {
-    title: 'ASIST.IO',
+    title: "ASIST.IO",
     description:
-      'Sistema destinado a la toma de asistencia para facilitar las clases de los profesores.',
-    imageUrl: '/images/proyecto-asistio.png',
-    repositoryUrl: 'https://github.com/DarioRv/sistema-asistencia-angular',
+      "Sistema destinado a la toma de asistencia para facilitar las clases de los profesores.",
+    imageUrl: "/images/proyecto-asistio.png",
+    repositoryUrl: "https://github.com/DarioRv/sistema-asistencia-angular",
     tags: [
-      { label: 'Angular', imageUrl: '/images/angular.svg' },
-      { label: 'Tailwind', imageUrl: '/images/tailwindcss.svg' },
-      { label: 'MongoDB', imageUrl: '/images/mongodb.svg' },
-    ],
-  },
+      { label: "Angular", imageUrl: "/images/angular.svg" },
+      { label: "Tailwind", imageUrl: "/images/tailwindcss.svg" },
+      { label: "MongoDB", imageUrl: "/images/mongodb.svg" }
+    ]
+  }
 ];
 ---
 
-<Section title='Proyectos' imageUrl='/images/administracion.png' ref='projects'>
+<Section title="Proyectos" imageUrl="/images/administracion.png" ref="projects">
   {
     projects.map(project => (
       <ProjectItem

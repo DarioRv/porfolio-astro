@@ -7,30 +7,31 @@ const socialLinks: SocialNetwork[] = [
   {
     label: "LinkedIn",
     link: "https://www.linkedin.com/in/dariovidal9",
-    imageUrl: "/images/linkedin.svg",
+    imageUrl: "/images/linkedin.svg"
   },
   {
     label: "Correo",
     link: "mailto:dariorvidal.27@gmail.com",
-    imageUrl: "/images/email.png",
+    imageUrl: "/images/email.png"
   },
   {
     label: "GitHub",
     link: "https://github.com/DarioRv",
-    imageUrl: "/images/github.svg",
+    imageUrl: "/images/github.svg"
   },
   {
     label: "Teléfono",
     link: "tel:+5491164050000",
-    imageUrl: "/images/telefono.png",
+    imageUrl: "/images/telefono.png"
   }
 ];
 ---
+
 <Section title="Contacto" imageUrl="/images/telefono.png" ref="contact">
-  <p class="mb-5">Si querés contactarme, podés hacerlo a través de las siguientes maneras:</p>
+  <p class="mb-5">
+    Si querés contactarme, podés hacerlo a través de las siguientes maneras:
+  </p>
   <ul class="flex gap-3 flex-wrap">
-    {socialLinks.map((socialLink) => (
-      <SocialCard {...socialLink} />
-    ))}
+    {socialLinks.map(socialLink => <SocialCard {...socialLink} />)}
   </ul>
 </Section>

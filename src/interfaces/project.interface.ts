@@ -1,4 +1,4 @@
-import type { Tag } from './tag.interface';
+import type { Tag } from "./tag.interface";
 
 export interface Project {
   title: string;

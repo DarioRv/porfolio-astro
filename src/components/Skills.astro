@@ -3,64 +3,67 @@ import Section from "./Section.astro";
 
 const skills = [
   {
-    label: 'html',
-    imageUrl: '/images/html5.svg',
+    label: "html",
+    imageUrl: "/images/html5.svg"
   },
   {
-    label: 'css',
-    imageUrl: '/images/css.svg',
+    label: "css",
+    imageUrl: "/images/css.svg"
   },
   {
-    label: 'javascript',
-    imageUrl: '/images/javascript.svg',
+    label: "javascript",
+    imageUrl: "/images/javascript.svg"
   },
   {
-    label: 'node',
-    imageUrl: '/images/nodejs.svg',
+    label: "node",
+    imageUrl: "/images/nodejs.svg"
   },
   {
-    label: 'Angular',
-    imageUrl: '/images/angular.svg',
+    label: "Angular",
+    imageUrl: "/images/angular.svg"
   },
   {
-    label: 'Java',
-    imageUrl: '/images/java.svg',
+    label: "Java",
+    imageUrl: "/images/java.svg"
   },
   {
-    label: 'Spring Boot',
-    imageUrl: '/images/spring-boot.png',
+    label: "Spring Boot",
+    imageUrl: "/images/spring-boot.png"
   },
   {
-    label: 'Spring Security',
-    imageUrl: '/images/spring-security.png',
+    label: "Spring Security",
+    imageUrl: "/images/spring-security.png"
   },
   {
-    label: 'MySQL',
-    imageUrl: '/images/mysql.svg',
+    label: "MySQL",
+    imageUrl: "/images/mysql.svg"
   },
   {
-    label: 'MongoDB',
-    imageUrl: '/images/mongodb.svg',
+    label: "MongoDB",
+    imageUrl: "/images/mongodb.svg"
   },
   {
-    label: 'Git',
-    imageUrl: '/images/git.svg',
+    label: "Git",
+    imageUrl: "/images/git.svg"
   },
   {
-    label: 'Docker',
-    imageUrl: '/images/docker.svg',
-  },
-
-]
+    label: "Docker",
+    imageUrl: "/images/docker.svg"
+  }
+];
 ---
-<Section title="Habilidades" imageUrl="/images/administracion.png" ref="skills" >
+
+<Section title="Habilidades" imageUrl="/images/codigo.png" ref="skills">
   <div class="flex flex-wrap gap-2 lg:gap-4 justify-center">
     {
-    skills.map(skill => (
-      <div class="bg-[#282828] rounded p-4 flex items-center" title={skill.label}>
-        <img  class="h-16" src={skill.imageUrl} alt={skill.label} />
-      </div>
-    ))
+      skills.map(skill => (
+        <div
+          class="bg-[#282828] rounded p-4 flex items-center"
+          title={skill.label}
+        >
+          <img class="h-16" src={skill.imageUrl} alt={skill.label} />
+        </div>
+      ))
     }
   </div>
 </Section>
