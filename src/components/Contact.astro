@@ -2,7 +2,7 @@
 import Section from "./Section.astro";
 import SocialCard from "./SocialCard.astro";
 
-import { socialNetworks, name } from "@cv";
+import { socialNetworks, name, email } from "@cv";
 ---
 
 <Section title="Contacto" imageUrl="/images/telefono.png" ref="contact">
@@ -18,5 +18,11 @@ import { socialNetworks, name } from "@cv";
         />
       ))
     }
+    <SocialCard
+      network="Correo"
+      iconUrl="/images/email.png"
+      url={`mailto:${email}`}
+      title={`Enviar un correo electrónico a ${name}`}
+    />
   </ul>
 </Section>
