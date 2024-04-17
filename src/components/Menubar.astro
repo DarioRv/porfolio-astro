@@ -14,7 +14,11 @@ const menubarItems = [
   >
     <div class="flex justify-between items-center md:hidden">
       <span class="font-bold">Menú</span>
-      <button class="flex flex-col gap-[5px] size-5 border-0" id="toggleMenu">
+      <button
+        class="flex flex-col gap-[5px] size-5 border-0"
+        id="toggleMenu"
+        aria-label="Abrir menú"
+      >
         <div
           class="border w-full transition-all duration-300 origin-left"
           id="menuTick1"
@@ -36,7 +40,11 @@ const menubarItems = [
       {
         menubarItems.map(({ name, link }) => (
           <li>
-            <a href={link} class="text-white hover:text-gray-300">
+            <a
+              href={link}
+              class="text-white hover:text-gray-300"
+              title={`Ir a la sección de ${name}`}
+            >
               {name}
             </a>
           </li>

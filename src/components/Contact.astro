@@ -2,7 +2,7 @@
 import Section from "./Section.astro";
 import SocialCard from "./SocialCard.astro";
 
-import { socialNetworks } from "@cv";
+import { socialNetworks, name } from "@cv";
 ---
 
 <Section title="Contacto" imageUrl="/images/telefono.png" ref="contact">
@@ -10,6 +10,13 @@ import { socialNetworks } from "@cv";
     Si querés contactarme, podés hacerlo a través de las siguientes maneras:
   </p>
   <ul class="flex gap-3 flex-wrap">
-    {socialNetworks.map(socialLink => <SocialCard {...socialLink} />)}
+    {
+      socialNetworks.map(socialLink => (
+        <SocialCard
+          {...socialLink}
+          title={`Visitar el perfil de ${name} en ${socialLink.network}`}
+        />
+      ))
+    }
   </ul>
 </Section>

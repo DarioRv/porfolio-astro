@@ -7,6 +7,7 @@
     "Me especializo en el desarrollo back-end con Java, Spring Boot, JPA con Hibernate y MySQL.",
     "Actualmente estoy aprendiendo acerca de tecnologías como Node.js, Angular y Express."
   ],
+  "email": "dariorvidal.27@gmail.com",
   "location": "San Salvador de Jujuy, Jujuy, Argentina",
   "socialNetworks": [
     {
@@ -18,11 +19,6 @@
       "network": "Linkedin",
       "iconUrl": "/images/linkedin.svg",
       "url": "https://www.linkedin.com/in/dariovidal9"
-    },
-    {
-      "network": "Correo",
-      "iconUrl": "/images/email.png",
-      "url": "mailto:dariorvidal.27@gmail"
     }
   ],
   "education": [
@@ -60,6 +56,10 @@
     {
       "label": "Angular",
       "icon": "/images/angular.svg"
+    },
+    {
+      "label": "RxJs",
+      "icon": "/images/rxjs.svg"
     },
     {
       "label": "Java",

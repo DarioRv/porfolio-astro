@@ -11,7 +11,11 @@ const { name, description, demoUrl, imageUrl, repositoryUrl, tags }: Project =
   {
     imageUrl && (
       <div>
-        <img class="aspect-video rounded-xl" src={imageUrl} alt={name} />
+        <img
+          class="aspect-video rounded-xl"
+          src={imageUrl}
+          alt={`Imagen descriptiva del proyecto ${name}`}
+        />
       </div>
     )
   }
@@ -35,6 +39,7 @@ const { name, description, demoUrl, imageUrl, repositoryUrl, tags }: Project =
             network="Código"
             iconUrl="/images/github.svg"
             url={repositoryUrl}
+            title={`Ver código en GitHub`}
           />
         )
       }
@@ -44,6 +49,7 @@ const { name, description, demoUrl, imageUrl, repositoryUrl, tags }: Project =
             network="Demo"
             iconUrl="/images/transmision-en-vivo.png"
             url={demoUrl}
+            title={`Ver demo en vivo`}
           />
         )
       }
