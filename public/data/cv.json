@@ -1,0 +1,129 @@
+{
+  "name": "Darío",
+  "fullName": "Darío Rubén Vidal",
+  "summary": "Desarrollador Back-end Java Jr",
+  "aboutMe": [
+    "Soy desarrollador Back-end y Front-end, soy estudiante de la carrera Analista Programador Universitario en la Facultad de Ingeniería.",
+    "Me especializo en el desarrollo back-end con Java, Spring Boot, JPA con Hibernate y MySQL.",
+    "Actualmente estoy aprendiendo acerca de tecnologías como Node.js, Angular y Express."
+  ],
+  "location": "San Salvador de Jujuy, Jujuy, Argentina",
+  "socialNetworks": [
+    {
+      "network": "Github",
+      "iconUrl": "/images/github.svg",
+      "url": "https://www.github.com/DarioRv"
+    },
+    {
+      "network": "Linkedin",
+      "iconUrl": "/images/linkedin.svg",
+      "url": "https://www.linkedin.com/in/dariovidal9"
+    },
+    {
+      "network": "Correo",
+      "iconUrl": "/images/email.png",
+      "url": "mailto:dariorvidal.27@gmail"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Facultad de Ingeniería - UNJu",
+      "area": "Analista Programador Universitario",
+      "startDate": "2022",
+      "endDate": "actualidad",
+      "highlights": [
+        "En la carrera he adquirido conocimientos sobre programación orientada a objetos, estructuras de datos, manejo de framworks como Spring Boot, Spring Security y Spring Cloud."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "label": "HTML",
+      "icon": "/images/html5.svg"
+    },
+    {
+      "label": "CSS",
+      "icon": "/images/css.svg"
+    },
+    {
+      "label": "Javascript",
+      "icon": "/images/javascript.svg"
+    },
+    {
+      "label": "Typescript",
+      "icon": "/images/typescript.svg"
+    },
+    {
+      "label": "Node",
+      "icon": "/images/nodejs.svg"
+    },
+    {
+      "label": "Angular",
+      "icon": "/images/angular.svg"
+    },
+    {
+      "label": "Java",
+      "icon": "/images/java.svg"
+    },
+    {
+      "label": "Spring Boot",
+      "icon": "/images/spring-boot.png"
+    },
+    {
+      "label": "Spring Security",
+      "icon": "/images/spring-security.png"
+    },
+    {
+      "label": "MySQL",
+      "icon": "/images/mysql.svg"
+    },
+    {
+      "label": "MongoDB",
+      "icon": "/images/mongodb.svg"
+    },
+    {
+      "label": "Git",
+      "icon": "/images/git.svg"
+    },
+    {
+      "label": "Docker",
+      "icon": "/images/docker.svg"
+    },
+    {
+      "label": "JWT",
+      "icon": "/images/jwt.svg"
+    },
+    {
+      "label": "Figma",
+      "icon": "/images/figma.svg"
+    }
+  ],
+  "projects": [
+    {
+      "name": "ASIST.IO",
+      "description": [
+        "Sistema destinado a la toma de asistencia para facilitar las clases de los profesores."
+      ],
+      "imageUrl": "/images/proyecto-asistio.png",
+      "repositoryUrl": "https://github.com/DarioRv/sistema-asistencia-angular",
+      "tags": [
+        { "label": "Angular", "iconUrl": "/images/angular.svg" },
+        { "label": "Tailwind", "iconUrl": "/images/tailwindcss.svg" }
+      ]
+    },
+    {
+      "name": "ASIST.IO API Rest",
+      "description": ["API Rest destinado a un sistema de asistencia."],
+      "repositoryUrl": "https://github.com/21Enzo17/asist.io",
+      "tags": [
+        { "label": "Java", "iconUrl": "/images/java.svg" },
+        { "label": "Spring boot", "iconUrl": "/images/spring-boot.png" },
+        {
+          "label": "Spring Security",
+          "iconUrl": "/images/spring-security.png"
+        },
+        { "label": "JWT", "iconUrl": "/images/jwt.svg" }
+      ]
+    }
+  ]
+}

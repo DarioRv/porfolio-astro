@@ -1,20 +1,20 @@
 ---
 interface Props {
-  label: string;
-  link: string;
-  imageUrl: string;
+  network: string;
+  url: string;
+  iconUrl: string;
 }
 
-const { label, link, imageUrl } = Astro.props;
+const { network, url, iconUrl } = Astro.props;
 ---
 
 <a
   class="flex gap-2 py-2 px-4 w-fit rounded-full hover:bg-slate-700 cursor-pointer"
-  href={link}
+  href={url}
   target="_blank"
 >
-  <img src={imageUrl} alt={label} />
-  <span>{label}</span>
+  <img src={iconUrl} alt={`Perfil de ${network}`} />
+  <span>{network}</span>
 </a>
 
 <style>

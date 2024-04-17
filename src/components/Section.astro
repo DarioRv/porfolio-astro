@@ -13,7 +13,7 @@ const { title, imageUrl, ref } = Astro.props;
   id={ref}
 >
   <header class="flex gap-3 items-center mb-5">
-    {imageUrl && <img src={imageUrl} alt={title} class="size-8 rounded-full" />}
+    {imageUrl && <img src={imageUrl} alt={title} class="size-8" />}
     <h2 class="font-bold text-3xl">{title}</h2>
   </header>
   <slot />
