@@ -1,4 +1,4 @@
 export interface Tag {
-  imageUrl?: string;
+  iconUrl?: string;
   label: string;
 }

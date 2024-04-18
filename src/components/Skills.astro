@@ -1,56 +1,7 @@
 ---
 import Section from "./Section.astro";
 
-const skills = [
-  {
-    label: "html",
-    imageUrl: "/images/html5.svg"
-  },
-  {
-    label: "css",
-    imageUrl: "/images/css.svg"
-  },
-  {
-    label: "javascript",
-    imageUrl: "/images/javascript.svg"
-  },
-  {
-    label: "node",
-    imageUrl: "/images/nodejs.svg"
-  },
-  {
-    label: "Angular",
-    imageUrl: "/images/angular.svg"
-  },
-  {
-    label: "Java",
-    imageUrl: "/images/java.svg"
-  },
-  {
-    label: "Spring Boot",
-    imageUrl: "/images/spring-boot.png"
-  },
-  {
-    label: "Spring Security",
-    imageUrl: "/images/spring-security.png"
-  },
-  {
-    label: "MySQL",
-    imageUrl: "/images/mysql.svg"
-  },
-  {
-    label: "MongoDB",
-    imageUrl: "/images/mongodb.svg"
-  },
-  {
-    label: "Git",
-    imageUrl: "/images/git.svg"
-  },
-  {
-    label: "Docker",
-    imageUrl: "/images/docker.svg"
-  }
-];
+import { skills } from "@cv";
 ---
 
 <Section title="Habilidades" imageUrl="/images/codigo.png" ref="skills">
@@ -61,7 +12,7 @@ const skills = [
           class="bg-[#282828] rounded p-4 flex items-center"
           title={skill.label}
         >
-          <img class="h-16" src={skill.imageUrl} alt={skill.label} />
+          <img class="h-16" src={skill.icon} alt={skill.label} />
         </div>
       ))
     }

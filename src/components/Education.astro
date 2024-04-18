@@ -1,17 +1,7 @@
 ---
 import EducationCard from "./EducationCard.astro";
 import Section from "./Section.astro";
-
-const education = [
-  {
-    school: "Facultad de Ingeniería - UNJu",
-    degree: "Analista Programador Universitario",
-    year: "2021 - actualidad",
-    description: `En la carrera he adquirido conocimientos sobre
-    programación orientada a objetos, estructuras de datos,
-    manejo de framworks como Spring Boot, Spring Security y Spring Cloud.`
-  }
-];
+import { education } from "@cv";
 ---
 
 <Section
@@ -20,13 +10,15 @@ const education = [
   ref="education"
 >
   {
-    education.map(({ school, degree, year, description }) => (
-      <EducationCard
-        school={school}
-        degree={degree}
-        year={year}
-        description={description}
-      />
-    ))
+    education.map(item => {
+      return (
+        <>
+          <EducationCard {...item} />
+          {item !== education[education.length - 1] && (
+            <hr class="my-4 border-b border-gray-700" />
+          )}
+        </>
+      );
+    })
   }
 </Section>
