@@ -8,8 +8,6 @@
 
 </div>
 
-## Descripción
-
 Este es mi porfolio personal, donde muestro mis proyectos y mi experiencia en el mundo de la programación.
 
 Desarrollado con [Astro](https://astro.build/).
