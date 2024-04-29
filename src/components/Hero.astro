@@ -1,5 +1,5 @@
 ---
-import { fullName, summary, location, socialNetworks, name, email } from "@cv";
+import { fullName, location, socialNetworks, name, email } from "@cv";
 import SocialCard from "./SocialCard.astro";
 ---
 
@@ -7,7 +7,31 @@ import SocialCard from "./SocialCard.astro";
   class="max-w-[700px] bg-custom-dark rounded-3xl px-8 py-12 mx-2 md:mx-auto mb-12"
 >
   <h1 class="text-4xl font-bold mb-4 text-indigo-400">Hola, soy {fullName}</h1>
-  <h2 class="mb-2">{summary}</h2>
+
+  <p class="mb-5">
+    Soy desarrollador <em class="text-[#ff5151]">Back-end</em> y <em
+      class="text-[#ff5151]">Front-end</em
+    >, soy estudiante de la carrera <strong class="text-indigo-300"
+      >Analista Programador Universitario</strong
+    >
+    en la Facultad de Ingeniería.
+  </p>
+
+  <p class="mb-5">
+    Me especializo en el desarrollo back-end con <strong class="text-amber-400"
+      >Java</strong
+    >, <strong class="text-emerald-400">Spring Boot</strong>, JPA con Hibernate
+    y <strong class="text-blue-400">MySQL</strong>.
+  </p>
+
+  <p class="mb-5">
+    Actualmente estoy aprendiendo acerca de tecnologías como <strong
+      class="text-green-400">Node.js</strong
+    >,
+    <strong class="text-[#ff5151]">Angular</strong> y <strong
+      class="text-yellow-400">Express</strong
+    >.
+  </p>
 
   <span class="flex gap-1 items-center text-sm">
     <img
@@ -18,7 +42,7 @@ import SocialCard from "./SocialCard.astro";
     {location}</span
   >
 
-  <div class="flex flex-wrap gap-4 mt-8">
+  <div class="flex flex-wrap gap-4 mt-3">
     {
       socialNetworks.map(social => (
         <SocialCard
