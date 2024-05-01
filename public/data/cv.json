@@ -11,14 +11,14 @@
   "location": "San Salvador de Jujuy, Jujuy, Argentina",
   "socialNetworks": [
     {
-      "network": "Github",
-      "iconUrl": "/images/github.svg",
-      "url": "https://www.github.com/DarioRv"
-    },
-    {
       "network": "Linkedin",
       "iconUrl": "/images/linkedin.svg",
       "url": "https://www.linkedin.com/in/dariovidal9"
+    },
+    {
+      "network": "Github",
+      "iconUrl": "/images/github.svg",
+      "url": "https://www.github.com/DarioRv"
     }
   ],
   "education": [

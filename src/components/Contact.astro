@@ -10,6 +10,12 @@ import { socialNetworks, name, email } from "@cv";
     Si querés contactarme, podés hacerlo a través de las siguientes maneras:
   </p>
   <ul class="flex gap-3 flex-wrap">
+    <SocialCard
+      network="Correo"
+      iconUrl="/images/email.png"
+      url={`mailto:${email}`}
+      title={`Enviar un correo electrónico a ${name}`}
+    />
     {
       socialNetworks.map(socialLink => (
         <SocialCard
@@ -18,11 +24,5 @@ import { socialNetworks, name, email } from "@cv";
         />
       ))
     }
-    <SocialCard
-      network="Correo"
-      iconUrl="/images/email.png"
-      url={`mailto:${email}`}
-      title={`Enviar un correo electrónico a ${name}`}
-    />
   </ul>
 </Section>

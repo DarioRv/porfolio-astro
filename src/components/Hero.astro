@@ -43,6 +43,12 @@ import SocialCard from "./SocialCard.astro";
   >
 
   <div class="flex flex-wrap gap-4 mt-3">
+    <SocialCard
+      network="Correo"
+      iconUrl="/images/email.png"
+      url={`mailto:${email}`}
+      title={`Enviar un correo electrónico a ${name}`}
+    />
     {
       socialNetworks.map(social => (
         <SocialCard
@@ -51,11 +57,5 @@ import SocialCard from "./SocialCard.astro";
         />
       ))
     }
-    <SocialCard
-      network="Correo"
-      iconUrl="/images/email.png"
-      url={`mailto:${email}`}
-      title={`Enviar un correo electrónico a ${name}`}
-    />
   </div>
 </section>
