@@ -58,6 +58,10 @@
       "icon": "/images/angular.svg"
     },
     {
+      "label": "Angular Material",
+      "icon": "/images/angular-material.png"
+    },
+    {
       "label": "RxJs",
       "icon": "/images/rxjs.svg"
     },
@@ -102,20 +106,18 @@
     {
       "name": "ASIST.IO",
       "description": [
-        "Sistema destinado a la toma de asistencia para facilitar las clases de los profesores."
+        "Aplicación web que tiene por objetivo controlar la asistencia de los alumnos a clases, logrando obtener una agilidad y reducción de tiempo para los profesores que realizan esta tarea."
       ],
       "imageUrl": "/images/proyecto-asistio.png",
       "repositoryUrl": "https://github.com/DarioRv/sistema-asistencia-angular",
+      "demoUrl": "https://asistio-a77d7.web.app",
       "tags": [
         { "label": "Angular", "iconUrl": "/images/angular.svg" },
-        { "label": "Tailwind", "iconUrl": "/images/tailwindcss.svg" }
-      ]
-    },
-    {
-      "name": "ASIST.IO API Rest",
-      "description": ["API Rest destinado a un sistema de asistencia."],
-      "repositoryUrl": "https://github.com/21Enzo17/asist.io",
-      "tags": [
+        {
+          "label": "Angular Material",
+          "iconUrl": "/images/angular-material.png"
+        },
+        { "label": "Tailwind", "iconUrl": "/images/tailwindcss.svg" },
         { "label": "Java", "iconUrl": "/images/java.svg" },
         { "label": "Spring boot", "iconUrl": "/images/spring-boot.png" },
         {
